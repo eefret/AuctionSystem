@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="160dp"
+    android:layout_height="160dp">
+    <TextView
+        android:text="@string/df_bid_picker_amount_label"
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:layout_gravity="top"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/df_bid_picker_amount"
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:text="$0.00"
+        android:inputType="numberDecimal"
+        android:digits="1234567890"
+        android:layout_height="wrap_content"  />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <ImageView
+        android:id="@+id/a_create_item_iv_picker"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:src="@drawable/ic_add_white_24dp"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/a_create_item_et_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="@string/a_create_item_et_name_hint"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:text="Initial price: "
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/a_create_item_et_price"
+            android:text="$0.00"
+            android:inputType="numberDecimal"
+            android:digits="1234567890"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:text="Expire Date: "
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/a_create_item_et_datetime"
+            android:hint="@string/a_create_item_et_datetime_hint"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

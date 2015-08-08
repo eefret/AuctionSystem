@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/material_deep_teal_500"
+    android:padding="@dimen/f_login_ll_padding">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/f_login_inner_ll_left_padding"
+        android:paddingRight="@dimen/f_login_inner_ll_right_padding">
+        
+        
+        <EditText
+            android:id="@+id/f_login_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/a_login_bottom_separation"
+            style="@style/Widget.AppCompat.EditText"
+            android:hint="@string/a_login_username_hint"
+            android:inputType="textNoSuggestions"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_marginTop="100dp"
+            android:maxLength="10"
+            android:textColor="@android:color/white"
+            android:nextFocusDown="@+id/f_login_et_password"
+            />
+
+        <EditText
+            android:id="@+id/f_login_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/a_login_bottom_separation"
+            android:inputType="textPassword"
+            style="@style/Widget.AppCompat.EditText"
+            android:hint="@string/a_login_password_hint"
+            android:padding="10dp"
+            android:singleLine="true"
+            />
+
+        <Button
+            android:id="@+id/f_login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/a_login_upper_separation_btn"
+            android:background="@android:color/white"
+            android:textColor="@color/material_deep_teal_500"
+            android:text="@string/btn_login"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/f_login_btn_register"
+        android:layout_width="match_parent"
+        android:gravity="left|center_vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/links_blue"
+        android:text="@string/f_login_btn_go_register"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/a_login_bottom_separation"
+        />
+
+</LinearLayout>

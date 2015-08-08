@@ -1,0 +1,49 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AuctionActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+        <com.kaissersoft.app.auctionsystem.ui.widget.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:background="@color/ColorPrimary"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v4.view.ViewPager>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/pager"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_add_white_24dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+</android.support.design.widget.CoordinatorLayout>

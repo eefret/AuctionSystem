@@ -1,0 +1,148 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ItemViewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/a_item_view_iv_picture"
+            android:layout_marginTop="72dp"
+            android:layout_width="196dp"
+            android:layout_height="196dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Initial Price:"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="US$ 0.0"
+                android:id="@+id/a_item_view_tv_initial_price"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Current Price:"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="US$ 0.0"
+                android:id="@+id/a_item_view_tv_current_price"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Ends in:"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="5 minutes"
+                android:id="@+id/a_item_view_tv_end"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Status:"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="BIDDING"
+                android:id="@+id/a_item_view_tv_status"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Last bidder:"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="BOT"
+                android:id="@+id/a_item_view_tv_last_bidder"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/content"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_add_white_24dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+</android.support.design.widget.CoordinatorLayout>

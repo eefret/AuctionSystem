@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">AuctionSystem</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="a_login_username_hint">Username (4–10)</string>
+    <string name="a_login_password_hint">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="f_login_btn_go_register">Not a member? Sign up now</string>
+    <string name="a_register_password_confirm_hint">Confirm Password</string>
+    <string name="f_login_btn_go_login">Already registered? Login Me</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="error_invalid_text_lenght">Invalid text lenght</string>
+    <string name="error_username_cannot_be_empty">Username cannot be empty!</string>
+    <string name="error_pass_cannot_be_empty">Password cannot be empty!</string>
+    <string name="error_could_not_load_database">Could not load database, please close and reopen the app.</string>
+    <string name="error_invalid_credentials">We can\'t find your user/password in the database, please register or retry.</string>
+    <string name="error_user_already_exist">User already exist, please try another username</string>
+    <string name="loading">Loading</string>
+    <string name="error_pass_confirm_cannot_be_empty">You need to confirm your password please.</string>
+    <string name="error_pass_are_different">Passwords are different, please retype password.</string>
+    <string name="error_unexpected">An unexpected error has been raised, please try again later.</string>
+    <string name="title_activity_auction">AuctionActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="a_auction_all_title">Auction</string>
+    <string name="a_auction_bidding_title">Bidding</string>
+    <string name="a_auction_won_title">Won</string>
+    <string name="li_initial_price_label">Initial Price:</string>
+    <string name="li_item_current_price_label">Current Price:</string>
+    <string name="li_item_expires_in_label">Expires in:</string>
+    <string name="li_item_status_label">Status:</string>
+    <string name="send">Send</string>
+    <string name="a_create_item_et_name_hint">Item Name</string>
+    <string name="a_create_item_et_price_hint">$ 0.00</string>
+    <string name="a_create_item_et_datetime_hint">mm/dd/yyyy hh:mm:ss</string>
+    <string name="error_item_has_no_image">Item has no image, please set one.</string>
+    <string name="error_item_has_no_name">Item has no name, please set one.</string>
+    <string name="error_item_has_no_price_or_incorrect">Item has no price or price is incorrect. Please correct.</string>
+    <string name="error_item_has_no_expiration">Item has no expiration or is invalid.</string>
+    <string name="error_date_must_be_greater">Can\'t set date before now.</string>
+    <string name="no_items">No Items.</string>
+    <string name="item_created">Item created.</string>
+    <string name="undo">Undo</string>
+    <string name="title_activity_item_view">ItemViewActivity</string>
+    <string name="logout">Logout</string>
+    <string name="a_item_view_btn_bidlist">Bidders List</string>
+    <string name="point_symbol">.</string>
+    <string name="money_symbol">$</string>
+    <string name="add_bid_price">Increase bid</string>
+    <string name="df_bid_picker_amount_label">Increase bid:</string>
+    <string name="df_bid_picker_title">Add bid</string>
+    <string name="ok">OK</string>
+</resources>
